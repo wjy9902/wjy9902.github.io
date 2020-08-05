@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jiayu</title>
+  
+  <subtitle>Everything will be better!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-08-05T02:26:20.414Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Jiayu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Database Learning week1</title>
+    <link href="http://yoursite.com/2020/08/05/Database_w1/"/>
+    <id>http://yoursite.com/2020/08/05/Database_w1/</id>
+    <published>2020-08-05T02:26:20.414Z</published>
+    <updated>2020-08-05T02:26:20.414Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Be-careful"><a href="#Be-careful" class="headerlink" title="Be careful"></a><strong>Be careful</strong></h1><blockquote><p>Before opening sqlite, I need to change directory to where the database document is, or I cannot open database.<br>Example: In my Mac: <code>cd Desktop/CITS1402/Lab1/</code></p></blockquote><h1 id="Command"><a href="#Command" class="headerlink" title="Command"></a><strong>Command</strong></h1><ul><li><p>Terminal Command</p><ul><li>Terminal commands are used at Terminal to navigate the file system.</li></ul></li><li><p>Dot Command</p><ul><li>Dot commands are used at SQLite to operate SQLite.</li><li>Example: <code>.open fileName</code>(to open a database file)  <code>.help</code>(to get dot commands)</li></ul></li><li><p>SQL Command</p><ul><li>SQL commands are actual database query.</li><li>SQL commands always terminate with a semi-colon, and return a  table as output.</li></ul></li></ul><a id="more"></a><h1 id="SQL-Commands-Learning"><a href="#SQL-Commands-Learning" class="headerlink" title="SQL Commands Learning"></a><strong>SQL Commands Learning</strong></h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> (<span class="keyword">DISTINCT</span>) <span class="keyword">column</span></span><br><span class="line"><span class="keyword">FROM</span> <span class="keyword">table</span></span><br><span class="line"><span class="keyword">WHERE</span> rowConditions</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> sortColumns (<span class="keyword">DESC</span>)</span><br><span class="line"><span class="keyword">LIMIT</span> numRows;</span><br></pre></td></tr></table></figure><h2 id="SELECT"><a href="#SELECT" class="headerlink" title="SELECT"></a>SELECT</h2><ol><li>use <code>*</code> to get all columns</li><li>use <code>SELECT DISTINCT</code>, each row will return once</li></ol><h2 id="ORDER-BY"><a href="#ORDER-BY" class="headerlink" title="ORDER BY"></a>ORDER BY</h2><ol><li>it can be used to sort several columns: <code>ORDER BY column1, column2</code></li><li>use <code>DESC</code> to sort in descending order</li></ol><h2 id="WHERE"><a href="#WHERE" class="headerlink" title="WHERE"></a>WHERE</h2><ol><li>use <code>BETWEEN</code> to search in special range:<br><code>WHERE awayScore BETWEEN 150 AND 170</code></li><li><code>AND</code> has more advanced than <code>OR</code></li><li>use <code>in</code> to replace <code>OR</code><br><code>WHERE awayTeam in (&quot;Fremantle&quot;, &quot;West Coast&quot;)</code></li><li>use <code>NOT</code> to deny conditions<br><code>WHERE awayTeam NOT in (&quot;Fremantle&quot;, &quot;West Coast&quot;)</code></li></ol><h2 id="ABS-Function"><a href="#ABS-Function" class="headerlink" title="ABS() Function"></a>ABS() Function</h2><ul><li>used to calculate the absolute value of a number</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Be-careful&quot;&gt;&lt;a href=&quot;#Be-careful&quot; class=&quot;headerlink&quot; title=&quot;Be careful&quot;&gt;&lt;/a&gt;&lt;strong&gt;Be careful&lt;/strong&gt;&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Before opening sqlite, I need to change directory to where the database document is, or I cannot open database.&lt;br&gt;Example: In my Mac: &lt;code&gt;cd Desktop/CITS1402/Lab1/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;Command&quot;&gt;&lt;a href=&quot;#Command&quot; class=&quot;headerlink&quot; title=&quot;Command&quot;&gt;&lt;/a&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Terminal Command&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Terminal commands are used at Terminal to navigate the file system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dot Command&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dot commands are used at SQLite to operate SQLite.&lt;/li&gt;
+&lt;li&gt;Example: &lt;code&gt;.open fileName&lt;/code&gt;(to open a database file)  &lt;code&gt;.help&lt;/code&gt;(to get dot commands)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SQL Command&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SQL commands are actual database query.&lt;/li&gt;
+&lt;li&gt;SQL commands always terminate with a semi-colon, and return a  table as output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="database" scheme="http://yoursite.com/categories/database/"/>
+    
+    
+  </entry>
+  
+</feed>
