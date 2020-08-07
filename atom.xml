@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-05T02:26:20.414Z</updated>
+  <updated>2020-08-07T10:44:07.729Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Database Learning week2</title>
+    <link href="http://yoursite.com/2020/08/07/Database_w2/"/>
+    <id>http://yoursite.com/2020/08/07/Database_w2/</id>
+    <published>2020-08-06T16:00:00.000Z</published>
+    <updated>2020-08-07T10:44:07.729Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Join"><a href="#Join" class="headerlink" title="Join"></a><strong>Join</strong></h1><blockquote><p>It can link different tables and return to a single set of output</p></blockquote><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> country.Name, city.Name</span><br><span class="line"><span class="keyword">FROM</span> city, country</span><br><span class="line"><span class="keyword">WHERE</span> city.ID = country.Capital;</span><br></pre></td></tr></table></figure><h1 id="Self-Join"><a href="#Self-Join" class="headerlink" title="Self Join"></a><strong>Self Join</strong></h1><blockquote><p>Select from a result of a query by using <code>In</code> </p></blockquote><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> CountryCode</span><br><span class="line"><span class="keyword">FROM</span> countrylanguage</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">Language</span> = <span class="string">&#x27;English&#x27;</span> <span class="keyword">AND</span> IsOfficial = <span class="string">&#x27;T&#x27;</span></span><br><span class="line"><span class="keyword">AND</span> CountryCode <span class="keyword">IN</span> ( <span class="keyword">SELECT</span> CountryCode <span class="keyword">FROM</span> countrylanguage <span class="keyword">WHERE</span> <span class="keyword">Language</span> = <span class="string">&#x27;French&#x27;</span> <span class="keyword">AND</span> IsOfficial = <span class="string">&#x27;T&#x27;</span>);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Join&quot;&gt;&lt;a href=&quot;#Join&quot; class=&quot;headerlink&quot; title=&quot;Join&quot;&gt;&lt;/a&gt;&lt;strong&gt;Join&lt;/strong&gt;&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;It can link different tables and
+      
+    
+    </summary>
+    
+    
+      <category term="database" scheme="http://yoursite.com/categories/database/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Database Learning week1</title>
