@@ -83,4 +83,28 @@
     
   </entry>
   
+  <entry>
+    <title>System Programming week2</title>
+    <link href="http://yoursite.com/2020/07/08/SP_week2/"/>
+    <id>http://yoursite.com/2020/07/08/SP_week2/</id>
+    <published>2020-07-07T16:00:00.000Z</published>
+    <updated>2020-08-07T12:26:12.986Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Command-in-Terminal"><a href="#Command-in-Terminal" class="headerlink" title="Command in Terminal"></a>Command in Terminal</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prompt&gt; cc -o &lt;name&gt; file</span><br></pre></td></tr></table></figure><blockquote><p><code>cc</code> means using cc compiler to compile file.<br><code>-o &lt;name&gt;</code> means compiler will output the compiled file with the specified name <code>&lt;name&gt;</code>.</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prompt&gt; cc -std&#x3D;c99 -Wall -Werror -o &lt;name&gt; file</span><br></pre></td></tr></table></figure><blockquote><p><code>-std=99</code> requests that the program conforms with the C99 standard.<br><code>-Wall</code> requests that the compiler warns us about all things in our program that are technically correct, but that could lead to problems when the program is executed.<br><code>Werror</code> requests that the compiler treat all warnings (from -Wall) as errors, and to not produce an executable file if any warnings are found.</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;&lt;name&gt; value</span><br></pre></td></tr></table></figure><blockquote><p><code>./</code> requests the compiler to run the program and input <code>value</code> as argvalue.</p></blockquote><ul><li>In <code>~/.bash_profile</code> type <code>alias mycc=&quot;cc -std=c99 -Wall -Werror&quot;</code> and after using the commond <code>source ~/.bash_profile</code>, the system will automatically load this change. This creates a textual alias called mycc that you can now use to compile your programs with.<br>  However when I opened a new terminal, I had to use <code>source ~/.bash_profile</code> again, so I typed <code>source ~/.bash_profile</code> in <code>~/.zshrc</code>. After doing that, everytime I reopen a terminal, that <code>source...</code> command automatically run.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Command-in-Terminal&quot;&gt;&lt;a href=&quot;#Command-in-Terminal&quot; class=&quot;headerlink&quot; title=&quot;Command in Terminal&quot;&gt;&lt;/a&gt;Command in Terminal&lt;/h1&gt;&lt;figu
+      
+    
+    </summary>
+    
+    
+      <category term="system programming" scheme="http://yoursite.com/categories/system-programming/"/>
+    
+    
+  </entry>
+  
 </feed>
